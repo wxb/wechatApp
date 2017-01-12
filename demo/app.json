@@ -5,7 +5,9 @@
     "pages/logs/logs",
     "pages/lab/lab",
     "pages/profile/profile",
-    "pages/view/view"
+    "pages/view/view",
+    "pages/lab/share/share",
+    "pages/lab/refresh/refresh"
   ],
   "window":{
     "enablePullDownRefresh": true,

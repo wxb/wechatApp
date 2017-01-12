@@ -1,4 +1,4 @@
-// pages/lab/lab.js
+// pages/lab/refresh/refresh.js
 Page({
   data:{},
   onLoad:function(options){
@@ -15,19 +15,5 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
-  },
-  redirectShare: function(){
-    wx.redirectTo({
-      url: './share/share',
-      success: function(res){
-        // success
-      },
-      fail: function() {
-        // fail
-      },
-      complete: function() {
-        // complete
-      }
-    })
   }
 })

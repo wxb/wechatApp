@@ -1,0 +1,4 @@
+<!--pages/lab/share/share.wxml-->
+<view>
+<text>这是一个分享功能测试页面</text>
+</view>

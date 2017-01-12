@@ -1,2 +1,6 @@
 <!--pages/lab/lab.wxml-->
 <text>小程序实验室</text>
+<view>
+    <button bindtap="redirectShare">分享功能演示页</button>
+</view>
+
