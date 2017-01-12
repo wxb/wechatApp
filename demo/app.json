@@ -1,9 +1,12 @@
 {
   "pages":[
+    "pages/lab/lab",
     "pages/home/index",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/lab/lab",
+    "pages/framework/framework",
+    "pages/fe/fe",
+    "pages/api/api",
     "pages/profile/profile",
     "pages/view/view",
     "pages/lab/share/share",
@@ -24,25 +27,30 @@
     "borderStyle": "black",
     "position": "bottom",
     "list": [{
-      "pagePath": "pages/home/index",
-      "text": "首页",
-      "iconPath": "common/image/tab/home.png",
-      "selectedIconPath": "common/image/tab/home.png"
-    },{
-      "pagePath": "pages/logs/logs",
-      "text": "日志",
-      "iconPath": "common/image/tab/home.png",
-      "selectedIconPath": "common/image/tab/home.png"
-    },{
       "pagePath": "pages/lab/lab",
       "text": "实验室",
-      "iconPath": "common/image/tab/home.png",
-      "selectedIconPath": "common/image/tab/home.png"
+      "iconPath": "common/image/tab/lab.png",
+      "selectedIconPath": "common/image/tab/lab.png"
+    },{
+      "pagePath": "pages/framework/framework",
+      "text": "框架",
+      "iconPath": "common/image/tab/framework.png",
+      "selectedIconPath": "common/image/tab/framework.png"
+    },{
+      "pagePath": "pages/fe/fe",
+      "text": "组件",
+      "iconPath": "common/image/tab/fe.png",
+      "selectedIconPath": "common/image/tab/fe.png"
+    },{
+      "pagePath": "pages/api/api",
+      "text": "API",
+      "iconPath": "common/image/tab/api.png",
+      "selectedIconPath": "common/image/tab/api.png"
     },{
       "pagePath": "pages/profile/profile",
       "text": "我",
-      "iconPath": "common/image/tab/home.png",
-      "selectedIconPath": "common/image/tab/home.png"
+      "iconPath": "common/image/tab/profile.png",
+      "selectedIconPath": "common/image/tab/profile.png"
     }]
   },
   "networkTimeout": {
