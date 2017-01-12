@@ -33,7 +33,7 @@ Page({
   },
   redirectMyLab: function(){
     wx.navigateTo({
-      url: '../lab/lab',
+      url: '../view/view',
       success: function(res){
         // success
         console.log(res);
@@ -49,7 +49,7 @@ Page({
     })
   },
   redirectHome: function(){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../home/index',
       success: function(res){
         // success
