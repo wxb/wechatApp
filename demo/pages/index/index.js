@@ -7,8 +7,8 @@ var nameData = {
 
 Page({
   data: {
-    motto: 'Hello World',
-    name: 'WeChat',
+    motto: 'Hello',
+    name: 'World',
     userInfo: {}
   },
   //事件处理函数
@@ -29,8 +29,37 @@ Page({
     })
   },
   changeName: function(e){
-    this.setData({
-      name: '王晓勃'
+    this.setData(nameData)
+  },
+  redirectMyLab: function(){
+    wx.navigateTo({
+      url: '../lab/lab',
+      success: function(res){
+        // success
+        console.log(res);
+      },
+      fail: function() {
+        // fail
+        console.info('fail');
+      },
+      complete: function() {
+        // complete
+        console.info('complete');
+      }
+    })
+  },
+  redirectHome: function(){
+    wx.redirectTo({
+      url: '../home/index',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
     })
   }
 })

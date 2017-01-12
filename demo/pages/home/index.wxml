@@ -1,0 +1,6 @@
+<!--pages/home/index.wxml-->
+<view>
+<text>pages/home/index.wxml</text>
+
+<button bindtap="goIndex">首页</button>
+</view>
