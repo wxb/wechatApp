@@ -2,5 +2,6 @@
     "navigationBarTitleText": "首页",
     "navigationBarBackgroundColor": "#0f0",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#fff000"
+    "backgroundColor": "#fff000",
+    "disableScroll": true
 }
