@@ -14,7 +14,7 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../home/index'
     })
   },
   onLoad: function () {
@@ -30,36 +30,5 @@ Page({
   },
   changeName: function(e){
     this.setData(nameData)
-  },
-  redirectMyLab: function(){
-    wx.navigateTo({
-      url: '../view/view',
-      success: function(res){
-        // success
-        console.log(res);
-      },
-      fail: function() {
-        // fail
-        console.info('fail');
-      },
-      complete: function() {
-        // complete
-        console.info('complete');
-      }
-    })
-  },
-  redirectHome: function(){
-    wx.navigateTo({
-      url: '../home/index',
-      success: function(res){
-        // success
-      },
-      fail: function() {
-        // fail
-      },
-      complete: function() {
-        // complete
-      }
-    })
   }
 })

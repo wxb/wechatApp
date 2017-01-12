@@ -1,6 +1,8 @@
 <!--pages/home/index.wxml-->
 <view>
-<text>pages/home/index.wxml</text>
-
-<button bindtap="goIndex">首页</button>
+<view>
+    <button bindtap="redirectLogs">日志</button>
+    <button bindtap="redirectMyLab">实验室</button>
+</view>
+<button bindtap="goIndex">登录页</button>
 </view>

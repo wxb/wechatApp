@@ -10,8 +10,5 @@
     <view>
     <button bindtap="changeName">Change Name</button>
     </view>
-    <view>
-    <button bindtap="redirectMyLab">我的小程序实验室    </button>
-    <button bindtap="redirectHome">主页Home</button>
-    </view>
+    
 </view>

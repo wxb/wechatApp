@@ -29,5 +29,36 @@ Page({
         // complete
       }
     })
+  },
+  redirectMyLab: function(){
+    wx.navigateTo({
+      url: '../view/view',
+      success: function(res){
+        // success
+        console.log(res);
+      },
+      fail: function() {
+        // fail
+        console.info('fail');
+      },
+      complete: function() {
+        // complete
+        console.info('complete');
+      }
+    })
+  },
+  redirectLogs: function(){
+    wx.navigateTo({
+      url: '../view/view',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
   }
 })

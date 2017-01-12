@@ -1,10 +1,10 @@
 {
   "pages":[
+    "pages/home/index",
     "pages/index/index",
     "pages/logs/logs",
     "pages/lab/lab",
     "pages/profile/profile",
-    "pages/home/index",
     "pages/view/view"
   ],
   "window":{
@@ -17,18 +17,30 @@
   },
   "tabBar": {
     "color": "#000000",
+    "selectedColor": "#f00000",
+    "backgroundColor": "#DBDFD3",
+    "borderStyle": "black",
+    "position": "bottom",
     "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页"
+      "pagePath": "pages/home/index",
+      "text": "首页",
+      "iconPath": "common/image/tab/home.png",
+      "selectedIconPath": "common/image/tab/home.png"
     },{
       "pagePath": "pages/logs/logs",
-      "text": "日志"
+      "text": "日志",
+      "iconPath": "common/image/tab/home.png",
+      "selectedIconPath": "common/image/tab/home.png"
     },{
       "pagePath": "pages/lab/lab",
-      "text": "实验室"
+      "text": "实验室",
+      "iconPath": "common/image/tab/home.png",
+      "selectedIconPath": "common/image/tab/home.png"
     },{
       "pagePath": "pages/profile/profile",
-      "text": "我"
+      "text": "我",
+      "iconPath": "common/image/tab/home.png",
+      "selectedIconPath": "common/image/tab/home.png"
     }]
   },
   "networkTimeout": {
