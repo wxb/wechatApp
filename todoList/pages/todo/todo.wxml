@@ -1,0 +1,24 @@
+<!--pages/todo/todo.wxml-->
+
+<view class="handle">
+    <input bindconfirm="setItem" placeholder="新增" focus="true" />
+</view>
+
+<view class="undone">
+    <text class="list">未完成</text>
+    <switch type="checkbox" wx:for="{{undone}}" wx:key="key" data-key="{{item.key}}" style="display: block;" bindchange="finishItem">
+    {{index}}.
+    <text>{{item.content}}</text>
+    </switch>
+</view>
+
+<view class="done" >
+    <text class="list">已完成</text>
+
+    <switch type="switch" wx:for="{{done}}" wx:key="key" data-key="{{item.key}}" style="display: block;" bindchange="activateItem">
+    {{index}}.
+    <text>{{item.content}}</text>
+    </switch>
+</view>
+
+<button size="mini" bindtap="clearStorage">清空</button>

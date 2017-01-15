@@ -1,0 +1,19 @@
+/* pages/todo/todo.wxss */
+
+view {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.handle {
+    height: 30px;
+}
+
+.undone {
+    margin: 10px auto;
+}
+
+.list {
+    font-size: 25px;
+    font-weight:  600;
+}

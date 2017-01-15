@@ -1,9 +1,39 @@
 /* pages/api/api.wxss */
-
 .btn-area {
-    width: 200px;
-    height: 30px;
+    position:relative;
+    margin: 5px auto;
+    height: 100%;
+    width: 90%;
 }
+
+navigator {
+    margin: 0 auto;
+    line-height:2.55555556;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-width: 2px;
+    border-color: #0f0;
+}
+
+navigator::after {
+content:" ";
+width:200%;
+height:200%;
+position:absolute;
+top:0;
+left:0;
+border:1px solid rgba(0, 0, 0, 0.2);
+-webkit-transform:scale(0.5);
+transform:scale(0.5);
+-webkit-transform-origin:0 0;
+transform-origin:0 0;
+box-sizing:border-box;
+border-radius:10px;
+
+}
+
+
 
 /** 修改默认的navigator点击态 **/
 .navigator-hover {

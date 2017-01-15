@@ -7,6 +7,7 @@
     "pages/framework/framework",
     "pages/fe/fe",
     "pages/api/api",
+    "pages/api/page/page",
     "pages/profile/profile",
     "pages/view/view",
     "pages/lab/share/share",
