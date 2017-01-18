@@ -1,13 +1,13 @@
 {
   "pages":[
+    "pages/api/request/request",
+    "pages/api/api",
     "pages/lab/lab",
     "pages/home/index",
     "pages/index/index",
     "pages/logs/logs",
     "pages/framework/framework",
     "pages/fe/fe",
-    "pages/api/api",
-    "pages/api/page/page",
     "pages/profile/profile",
     "pages/view/view",
     "pages/lab/share/share",

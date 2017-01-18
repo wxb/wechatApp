@@ -1,0 +1,6 @@
+<!--pages/api/request/request.wxml-->
+
+<view>
+<input />
+<button type="primary" bindtap="makeReques">Baidu搜索</button>
+</view>
