@@ -1,7 +1,7 @@
 <!--pages/todo/todo.wxml-->
 
 <view class="handle">
-    <input bindconfirm="setItem" placeholder="新增" focus="true" />
+    <input bindconfirm="setItem" placeholder="新增" focus="true" value="{{input}}" />
 </view>
 
 <view class="undone">

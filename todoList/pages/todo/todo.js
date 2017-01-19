@@ -3,7 +3,9 @@
 var util = require('../../utils/util.js')
 
 Page({
-  data:{},
+  data:{
+    input: ''
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },
@@ -26,6 +28,7 @@ Page({
     this.setData({'undone':undoneList, 'done':doneList})
   },
   setItem:function(event){
+    var _this = this;
     var one = {key:Date.now(), content:event.detail.value};
     var undone = wx.getStorageSync('undone') || []
     undone.unshift(one)
@@ -45,14 +48,14 @@ Page({
         })
       },
       complete: function(){
-        var pages = getCurrentPages()
-        var curPage = pages[pages.length-1]
-        curPage.refreshData()
+        _this.setData({'input':''})
+        _this.refreshData()
       }
     })
   },
 
   finishItem:function(e){
+    var _this = this;
     var status = e.detail.value;
     if(true == status){
       var rmKey = e.currentTarget.dataset.key
@@ -80,9 +83,7 @@ Page({
               })
             },
             complete: function(){
-              var pages = getCurrentPages()
-              var curPage = pages[pages.length-1]
-              curPage.refreshData()
+              _this.refreshData()
             }
           })
         }
@@ -91,6 +92,7 @@ Page({
   },
 
   activateItem:function(e){
+    var _this = this;
     var status = e.detail.value;
     if(true == status){
       var rmKey = e.currentTarget.dataset.key
@@ -119,9 +121,7 @@ Page({
               })
             },
             complete: function(){
-              var pages = getCurrentPages()
-              var curPage = pages[pages.length-1]
-              curPage.refreshData()
+              _this.refreshData()
             }
           })
         }

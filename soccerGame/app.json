@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/data/data",
     "pages/logs/logs"
   ],
   "window":{
@@ -8,5 +9,18 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "比赛",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }, {
+      "pagePath":"pages/data/data",
+      "text": "数据",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }]
   }
 }
