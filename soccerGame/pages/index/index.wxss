@@ -1,21 +1,80 @@
 /**index.wxss**/
-.userinfo {
+
+.league {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 0 0px;
+}
+
+.league-item {
+  margin: 0 22rpx;
+  color: #777;
+}
+
+.active {
+  color: #000;
+}
+
+.schedule {
+  margin: 30rpx 0;
+  height: 1000rpx;
+}
+
+.game-status {
+  display: flex;
+  font-size: 10px;
+  color: #777;
+}
+.status-item {
+  width: 245rpx;
+  height: 30rpx;
+}
+
+.game-score{
+  margin-top: 10rpx;
+  display:flex;
   align-items: center;
+  justify-content: space-between;
+}
+.score-item{
+  width: 245rpx;
+  height: 150rpx;
+  font-size: 26rpx;
+  text-align: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.text-center {
+  text-align: center;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.text-right {
+  text-align: right;
+}
+.video-link {
+  color:coral;
 }
 
-.usermotto {
-  margin-top: 200px;
+.club-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.club-name {
+  margin: 5rpx 0;
+  font-size: 15px;
+}
+
+.game-time {
+  font-size: 20px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game-date {
+  margin: 10rpx auto;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  background-color: #EEE;
 }
