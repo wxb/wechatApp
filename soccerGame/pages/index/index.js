@@ -7,11 +7,14 @@ var app = getApp()
 var apiUrl = config.API_URL;
 var apiKey = config.API_KEY;
 var league = config.LEAGUE;
+var logoMap= config.LOGO_MAP;
 var iconMap= config.ICON_MAP;
-var selected = '西甲';
+var selected = '中超';
+var logo = logoMap[selected];
 Page({
   data: {
     league: league,
+    logo: logo,
     icon: iconMap,
     select: selected,
   },
@@ -54,8 +57,23 @@ Page({
       success: function(res){
         // success
         console.log(res.data.result);
+        let saicheng1 = res.data.result.views.saicheng1;
+        let saicheng2 = res.data.result.views.saicheng2;
+        for(let i=0; i<saicheng1.length; i++){
+          saicheng1[i].round = res.data.result.tabs.saicheng1;
+          saicheng1[i].c4T1Logo = iconMap[logoMap[selected]][saicheng1[i]['c4T1']];
+          saicheng1[i].c4T2Logo = iconMap[logoMap[selected]][saicheng1[i]['c4T2']];
+        }
+        for(let i=0; i<saicheng2.length; i++){
+          saicheng2[i].round = res.data.result.tabs.saicheng2;
+          saicheng2[i].c4T1Logo = iconMap[logoMap[selected]][saicheng2[i]['c4T1']];
+          saicheng2[i].c4T2Logo = iconMap[logoMap[selected]][saicheng2[i]['c4T2']];
+        }
+        let list = saicheng1.concat(saicheng1, saicheng2);
+        console.info(list);
         _this.setData({
-          game: res.data.result.views.saicheng1,
+          logo: logoMap[selected],
+          game: list,
         });
         wx.hideNavigationBarLoading();
       },

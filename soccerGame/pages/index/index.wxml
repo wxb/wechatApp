@@ -10,26 +10,25 @@
     <block wx:for="{{game}}">
     <view>
         <view class="game-status" style="flex-direction:row;">
-            <view class="status-item">{{index}}</view>
+            <view class="status-item">{{item.round}}</view>
             <view class="status-item text-center">{{item.c1}}</view>
-            <view class="status-item text-right video-link">集锦</view>
+            <view class="status-item text-right video-link">{{item.c51}}</view>
         </view>
         <view class="game-score" style="flex-direction:row;">
             <view style="flex-direction:column" class="score-item">
-                <view><image class="club-icon" mode="aspectFit" src="/image/club/csl/{{icon.csl['广州恒大']}}.png"></image></view>
+                <view><image class="club-icon" mode="aspectFit" src="/image/club/{{logo}}/{{item.c4T1Logo == undefined ? 'logo' : item.c4T1Logo}}.png"></image></view>
                 <view class="club-name">{{item.c4T1}}</view>
             </view>
             <view class="score-item ">
                 <view class="game-time">{{item.c4R}}</view>
-                <view>{{item.c3}}</view>
+                <view>{{item.c2}} {{item.c3}}</view>
             </view>
             <view style="flex-direction:column" class="score-item">
-                <view><image class="club-icon" mode="aspectFit" src="/image/club/csl/dongya.png"></image></view>
+                <view><image class="club-icon" mode="aspectFit" src="/image/club/{{logo}}/{{item.c4T2Logo == undefined ? 'logo' : item.c4T2Logo}}.png"></image></view>
                 <view class="club-name">{{item.c4T2}}</view>
             </view>
         </view>
     </view>
     </block>
-    <view class="game-date">12-07周日</view>
 </scroll-view>
 </view>
