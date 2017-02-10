@@ -12,9 +12,9 @@
 * 小程序数据缓存（本地存储）
 
 # 完成后app样式
-![]()
-![]()
-![]()
+![](https://github.com/wxb/wechatApp/blob/master/soccerGame/image/01.jpg)
+![](https://github.com/wxb/wechatApp/blob/master/soccerGame/image/02.jpg)
+![](https://github.com/wxb/wechatApp/blob/master/soccerGame/image/3.jpg)
 
 # 开发总结
 * 转变传统开发思维，比如在使用`this.setData()`数据绑定，和我们传统web开发直接操作DOM有所不同、事件操作时传递参数都和传统开发方式有所不同
