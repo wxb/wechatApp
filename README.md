@@ -5,3 +5,4 @@
 
 * 微信小程序开发手册学习演示DEMO：[demo](https://github.com/wxb/wechatApp/tree/master/demo)
 * TODO任务列表APP：[todoList](https://github.com/wxb/wechatApp/tree/master/todoList)
+* 足球赛程数据APP: [soccerGame](https://github.com/wxb/wechatApp/tree/master/soccerGame)
